@@ -1,0 +1,41 @@
+/* font-family: 'Nothing You Could Do', cursive; */
+*{
+    margin: 0;
+    padding: 0;
+}
+.head {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+}
+
+.head div {
+    padding: 30px;
+    margin: 3px;
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 28px;
+    text-align: center;
+    float: left;
+}
+
+.head div:hover {
+    background-color: gray
+}
+
+.head div a {
+    text-decoration: none;
+    color: white;
+}
+
+#settings-logo {
+   padding: 0px 0px 0px 0px;
+   margin: 0px;
+}
+
+#img-logo{
+    height: 105px;
+    width: 250px;;
+    scale: inherit;
+}
