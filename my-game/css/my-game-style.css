@@ -3,39 +3,109 @@
     margin: 0;
     padding: 0;
 }
-.head {
-    display: flex;
-    flex-direction: row;
+
+.menu-bar{
     width: 100%;
-    background-color: black;
     position: fixed;
-}
-
-.head div {
-    padding: 30px;
-    margin: 3px;
-    font-family: 'Nothing You Could Do', cursive;
-    font-size: 28px;
-    text-align: center;
     float: left;
+    z-index: 1;
 }
 
-.head div:hover {
-    background-color: gray
+.menu-bar ul{
+    list-style-type: none;
+    background-color: rgba(0, 0, 0);
+    overflow: hidden;
 }
 
-.head div a {
-    text-decoration: none;
+.menu-bar ul li{
+    float: left;
+    padding: 0px 10px 0px 10px;
+}
+
+li a, .dropbtn{
+    display: inline-block;
     color: white;
+    font-size: 28px;
+    font-family: 'Nothing You Could Do', cursive; 
+    text-align: center;
+    padding: 14px 30px 14px 30px;
+    text-decoration: none;
 }
 
-#settings-logo {
-   padding: 0px 0px 0px 0px;
-   margin: 0px;
+li .dropdown{
+    display: inline-block;
 }
 
-#img-logo{
-    height: 105px;
-    width: 250px;;
-    scale: inherit;
+li a:hover, .dropdown:hover .dropbtn{
+    background-color: #5e5e5e9c;
+    color: red;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover{ background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.slideshow{
+    position: absolute;
+    top: 65px; 
+    clear: both;
+    width: 75%;
+    height: 91%;
+}
+
+.classe-slide{
+    display: none;
+    width: 67%;
+    height: 100%;
+}
+
+.control-preview-nav{
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    top: 93%;
+    font-size: 22px;
+    color: gray;
+    cursor: pointer;
+    list-style-type: none;
+    text-decoration: none;
+    background-color: black;
+}
+
+.control-next-nav{
+    width: 50px;
+    height: 40px;
+    font-size: 22px;
+    color: gray;
+    cursor: pointer;
+    position: absolute;
+    top: 93%;
+    right: 33%;
+    list-style-type: none;
+    text-decoration: none;
+    background-color: black;
+}
+
+.control-preview-nav:hover, .control-next-nav:hover{
+    background-color: gray;
+    color: black;
 }

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>   Soul and Life     </title>
@@ -7,16 +8,41 @@
     </head>
 
     <body>
-        <div class="head">
-            <div id="settings-logo"> <img id="img-logo" src="../my-game/img/icon.jpg" alt="logo" > </div>
-            <div><a href="#"> Home </a></div>
-            <div><a href="#"> Jogo </a></div>
-            <div><a href="#"> Baixar </a></div>
-            <div><a href="#"> Fóruns </a></div>
-            <div><a href="#"> Ajuda / Suporte </a></div>
+        
+        <div class="menu-bar">
+            <ul>
+               <li> <a href="#"> Home </a> </li>
+               <li> <a href="#"> Jogo </a> </li>
+               <li> <a href="#"> Comunidade </a> </li>
+               <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn"> Classes </a>
+
+                    <div class="dropdown-content">
+                        <a href="#"> Shaolin </a>
+                        <a href="#"> Caçadora </a>
+                        <a href="#"> Bruxa </a>
+                        <a href="#"> Mago </a>
+                        <a href="#"> Beserker </a>
+                        <a href="#"> Valquíria </a>
+                    </div>
+               </li>
+               <li> <a href="#"> Suporte / Ajuda </a> </li>
+            </ul>
         </div>
-        <footer>
-            Cammon play the game!!!
-        </footer>
+
+        <div class="slideshow">
+            <img src="img/Sholin.jpg" class="classe-slide">
+            <img src="img/caçadora.jpg" class="classe-slide">
+            <img src="img/witch.jpg" class="classe-slide">
+            <img src="img/sorcerer.jpg" class="classe-slide">
+            <img src="img/beserker.jpg" class="classe-slide">
+            <img src="img/knigth.jpg" class="classe-slide">
+            
+            <button class="control-preview-nav" onclick="plusDiv(-1)"> &#10094; </button>
+            <button class="control-next-nav" onclick="plusDiv(1)"> &#10095; </button>
+        </div>
+
+        <script type="text/javascript" src="js/slide.js"></script>
     </body>
+
 </html>
