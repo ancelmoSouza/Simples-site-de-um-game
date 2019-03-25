@@ -6,7 +6,7 @@
 
 .menu-bar{
     width: 100%;
-    position: fixed;
+    position: relative;
     float: left;
     z-index: 1;
 }
@@ -66,28 +66,27 @@ li a:hover, .dropdown:hover .dropbtn{
 
 .slideshow{
     position: absolute;
-    top: 65px; 
+    display: flex;
+    top: 10%;
     clear: both;
     width: 75%;
-    height: 91%;
+    height: 75%;
 }
 
 .classe-slide{
     display: none;
-    width: 67%;
-    height: 100%;
 }
 
 .control-preview-nav{
     width: 50px;
     height: 40px;
     position: absolute;
-    top: 93%;
+    top: 115%;
+    left: 0;
     font-size: 22px;
-    color: gray;
+    color: white;
     cursor: pointer;
     list-style-type: none;
-    text-decoration: none;
     background-color: black;
 }
 
@@ -95,17 +94,15 @@ li a:hover, .dropdown:hover .dropbtn{
     width: 50px;
     height: 40px;
     font-size: 22px;
-    color: gray;
+    color: white;
     cursor: pointer;
     position: absolute;
-    top: 93%;
-    right: 33%;
+    top: 115%;
+    right: 0;
     list-style-type: none;
-    text-decoration: none;
     background-color: black;
 }
 
 .control-preview-nav:hover, .control-next-nav:hover{
     background-color: gray;
-    color: black;
 }
