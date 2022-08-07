@@ -1,2 +1,2 @@
 # Simples-site-de-um-game
-Um simples projeto para testes de um site de um jogo fictício
+Construir um site deexibição de m jogo RPG. Consiste de um teste dos conhecimentos básico adquiridos na disciplina de Desenvolviment de Software para WEB.
